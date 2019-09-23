@@ -1,25 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
 body{
 	margin:0;
 }
 
+
+
+/*
+FONTS
+*/
+
 h1{
-	font-family: 'futura';
+	font-family: 'Hind';
 	color:blue;
 	font-weight:700;
-	font-size:25px;
+	font-size:30px;
 }
 
 h2{
-	font-family: 'futura';
-	margin:10px;
-
+	font-family: 'Hind';
+	margin:0;
 }
 
 h3{
-	font-family: 'futura';
+	font-family: 'Hind';
 	margin:10px;
 }
+
+
+/*
+structure
+*/
 
 header{
 	padding:10px;
@@ -29,7 +40,7 @@ header{
 }
 
 nav a{
-	font-family: 'futura';
+	font-family: 'Hind';
 	text-decoration: none;
 	font-size:20px;
 	color:#fff;
@@ -53,8 +64,20 @@ background:#fff;
 }
 
 main{
-	background:#eee;
+	padding:20px;
+	padding-right:30px;
 }
+
+aside{
+	padding:20px;
+}
+
+
+main p {
+	font-family: 'Hind';
+	font-size:17px;
+}
+
 
 footer{
 	background:rgb(30,0,180);
@@ -64,26 +87,8 @@ footer{
 
 footer p{
 	color:#fff;
-	font-family: 'futura';
+	font-family: 'Hind';
 	text-align: center;
-
-}
-
-.grid-container {
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item{
-}
-
-.slideshow{
-	background:yellowgreen;
-	height: 200px;
-}
-
-#karnevalister{
-		background:purple;
 
 }
 
@@ -91,17 +96,41 @@ grid-template-columns: repeat(3, 1fr);
 	background:#eee;
 	width:80%;
 	height:200px;
-	margin-left:10px;
+	margin-left:0px;
 	padding-top:5px;
 	margin-bottom: 10px;
 }
 
+
+/*
+Grid
+*/
+
+.grid-container {
+  display: grid;
+grid-template-columns: auto 50% auto;
+}
+
+.grid-item{
+}
+
+/*
+Slideshow
+*/
+
+
+.slideshow{
+	background:yellowgreen;
+	height: 200px;
+}
+
+
 #slideshow { 
     margin: auto; 
     position: relative; 
-   	height:305px;
+   	height:16vw;
     padding: 10px; 
-   /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
 }
 
 #slideshow img{
@@ -111,7 +140,7 @@ grid-template-columns: repeat(3, 1fr);
 
 #slideshow > div { 
     position: absolute; 
-    top: 10px; 
+    top: 0px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
@@ -120,7 +149,7 @@ grid-template-columns: repeat(3, 1fr);
 #slideshow2 { 
     margin: auto; 
     position: relative; 
-   	height:400px;
+   	height:25vw;
     padding: 10px; 
    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
 }
@@ -132,13 +161,21 @@ grid-template-columns: repeat(3, 1fr);
 
 #slideshow2 > div { 
     position: absolute; 
-    top: 10px; 
+    top: 0px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
 }
 
+#main-image{
+	width:50%;
+	float:left;
+	margin:20px;
+}
 
+/*
+screen responsiveness
+*/
 
 @media (max-width: 1024px){
 
