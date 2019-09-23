@@ -24,9 +24,36 @@ h2{
 
 h3{
 	font-family: 'Hind';
-	margin:10px;
+	margin:5px;
 }
 
+
+main p {
+	font-family: 'Hind';
+	font-size:17px;
+}
+
+
+nav a{
+	font-family: 'Hind';
+	text-decoration: none;
+	font-size:20px;
+	color:#fff;
+	margin-left:15px;
+	transition: 0.1s linear;
+}
+
+nav a:hover{
+	color:rgb(150,250,230);
+
+}
+
+aside p{
+	font-family: 'Hind';
+	font-size:17px;
+	margin-top:0;
+	margin-left:5px	;
+}
 
 /*
 structure
@@ -39,28 +66,24 @@ header{
 
 }
 
-nav a{
-	font-family: 'Hind';
-	text-decoration: none;
-	font-size:20px;
-	color:#fff;
-	margin-left:15px;
-	transition: 0.1s linear;
-}
 
-nav a:hover{
-	color:rgb(250,200,200);
-
-}
 
 nav{
-	background:rgb(30,0,180);
-	padding:50px;
+	background:rgb(30,190,120);
+	padding:30px;
 	text-align: center;
+	position: sticky;
+	top:0px;
+	z-index:1;
 }
 
 section, main, aside{
 background:#fff;
+}
+
+section{
+	padding:20px;
+	border-right: 1px solid #ddd;
 }
 
 main{
@@ -70,13 +93,12 @@ main{
 
 aside{
 	padding:20px;
+	border-left:1px solid #ddd;
+
 }
 
 
-main p {
-	font-family: 'Hind';
-	font-size:17px;
-}
+
 
 
 footer{
@@ -93,12 +115,11 @@ footer p{
 }
 
 .news{
-	background:#eee;
 	width:80%;
-	height:200px;
 	margin-left:0px;
-	padding-top:5px;
+	padding:10px;
 	margin-bottom: 10px;
+	border-bottom:1px solid #ddd;
 }
 
 
@@ -108,7 +129,7 @@ Grid
 
 .grid-container {
   display: grid;
-grid-template-columns: auto 50% auto;
+grid-template-columns: 25% 50% 25%;
 }
 
 .grid-item{
@@ -129,7 +150,7 @@ Slideshow
     margin: auto; 
     position: relative; 
    	height:16vw;
-    padding: 10px; 
+    padding: 0px; 
     /* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
 }
 
@@ -140,17 +161,14 @@ Slideshow
 
 #slideshow > div { 
     position: absolute; 
-    top: 0px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+   
 }
 
 #slideshow2 { 
     margin: auto; 
     position: relative; 
    	height:25vw;
-    padding: 10px; 
+    padding: 0px; 
    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
 }
 
@@ -161,16 +179,26 @@ Slideshow
 
 #slideshow2 > div { 
     position: absolute; 
-    top: 0px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+  
 }
+
+
+/*
+Images 
+*/
+
 
 #main-image{
 	width:50%;
 	float:left;
 	margin:20px;
+}
+
+#event1{
+	width:80%;
+	margin:auto;
+	display: block;
+	margin-bottom:20px;
 }
 
 /*
