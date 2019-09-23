@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind|Playfair+Display&display=swap');
 
 *{
 	margin:0;
@@ -14,7 +14,7 @@ FONTS
 */
 
 h1, h1 a{
-	font-family: 'Hind';
+	font-family: 'Playfair Display';
 	color:blue;
 	font-weight:700;
 	font-size:30px;
@@ -22,7 +22,7 @@ h1, h1 a{
 }
 
 h2{
-	font-family: 'Hind';
+	font-family: 'Playfair Display';
 	font-size:40px;
 	line-height: 1;
 	margin-top: 10px;
@@ -58,10 +58,13 @@ nav a:hover{
 aside p{
 	font-family: 'Hind';
 	font-size:17px;
-	margin-top:0;
-	margin-left:5px	;
+	margin-left:5px;
 }
 
+.bli-karnevalist p{
+	font-family: 'Hind';
+	font-size:17px;
+}
 /*
 structure
 */
@@ -69,7 +72,7 @@ structure
 header{
 	padding:10px;
 	text-align: center;
-	background:rgb(256,230,240);
+	background:rgb(250,210,230);
 
 }
 
@@ -105,7 +108,42 @@ aside{
 }
 
 
+.bli-karnevalist{
+	min-height:100vh;
+	margin:auto;
+	display: grid;
+	grid-template-columns:25% 50% 25%;
+}
 
+.left-img{
+ width:100%;
+ margin-bottom: 5px;
+
+}
+
+.left-images{
+	padding:5px;
+	background:rgb(230,225,250);
+}
+
+
+.center{
+	padding-top:30px;
+	padding:20px;
+	border-left:1px solid #ddd;
+
+}
+
+
+.right{
+	padding-top:30px;
+	font-family: 'Hind';
+	font-size:17px;
+	border-left:1px solid #ddd;
+	padding-left:20px;
+	margin-left:20px;
+	background:rgb(230,225,250);
+}
 
 
 footer{
@@ -191,6 +229,35 @@ Slideshow
 
 
 /*
+Countdown
+*/
+
+.container {
+  	color: darkred;
+}
+
+
+li {
+	color:#000;
+	font-family: 'Playfair Display';
+	height:6em;
+	font-size: 1em;
+  	list-style-type: none;
+	padding: 0em;
+  	text-transform: uppercase;
+}
+
+li span { 
+	color: darkred;
+	padding-bottom:0.3em;
+	height:1em;
+	display: block;
+	font-size: 4rem;
+
+}
+
+
+/*
 Images 
 */
 
@@ -222,6 +289,10 @@ screen responsiveness
 grid-template-columns: repeat(2, 1fr);
 }
 
+.bli-karnevalist{
+	grid-template-columns: repeat(1, 1fr);
+
+}
 }
 
 
@@ -234,6 +305,8 @@ display: none;
   display: grid;
 grid-template-columns: repeat(1, 1fr);
 }
+
+
 
 }
 
