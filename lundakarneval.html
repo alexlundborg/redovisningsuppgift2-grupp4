@@ -1,0 +1,90 @@
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+	<h1>Lundakarnevalen 2022</h1>
+</header>
+<nav>
+	<a href="">Bli karnevalist</a>
+	<a href="">Om karnevalen!</a>
+	<a href="">Reservera biljetter</a>
+	<a href="">Gästbok</a>
+</nav>
+
+<div class="grid-container">
+<section>
+	<h3>Karnevalståget</h3>
+	<div id="slideshow">
+   <div>
+     <img src="diva.jpg">
+   </div>
+   <div>
+     <img src="diva2.jpg">
+   </div>
+  
+</div>
+		<h3>Karnevalister</h3>
+<div id="slideshow2">
+   <div>
+     <img src="starfish.jpg">
+   </div>
+   <div>
+     <img src="starfish2.jpg">
+   </div>
+  
+</div>
+</section>
+
+<main>
+	<h2>Main</h2>
+
+</main>
+
+<aside>
+	<h2>Aside</h2>
+	<div class="news">
+		<h3>News</h3>
+	</div>
+	<div class="news">
+		<h3>News</h3>
+	</div>
+</aside>
+</div>
+
+<footer>
+<p> © 2019 Grupp 4
+</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+
+$("#slideshow2 > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow2 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow2');
+},  5000);
+
+</script>
+
+</body>
