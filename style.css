@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
-body{
+*{
 	margin:0;
+}
+
+body{
 }
 
 
@@ -10,16 +13,20 @@ body{
 FONTS
 */
 
-h1{
+h1, h1 a{
 	font-family: 'Hind';
 	color:blue;
 	font-weight:700;
 	font-size:30px;
+	text-decoration: none;
 }
 
 h2{
 	font-family: 'Hind';
-	margin:0;
+	font-size:40px;
+	line-height: 1;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 h3{
