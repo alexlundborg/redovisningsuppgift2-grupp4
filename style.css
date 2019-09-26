@@ -19,6 +19,12 @@ h1, h1 a{
 	font-weight:700;
 	font-size:30px;
 	text-decoration: none;
+
+}
+
+#logga {
+	float: left;
+	height: 60px;
 }
 
 h2{
