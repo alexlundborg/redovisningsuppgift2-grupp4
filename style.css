@@ -296,15 +296,15 @@ Overlay menu
   z-index: 1;
   top: 92px;
   left: 0;
-  background:rgb(30,190,120);
+  background:rgb(0,180,110);
   overflow-x: hidden;
-  opacity: 0.95;
+  opacity: 0.97;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 40px;
+  top: 70px;
   margin-top: 50px;
 }
 
