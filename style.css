@@ -13,12 +13,17 @@ body{
 FONTS
 */
 
-h1, h1 a{
+h1 a{
 	font-family: 'Playfair Display';
 	color:blue;
 	font-weight:700;
-	font-size:30px;
+	font-size:40px;
 	text-decoration: none;
+}
+
+#logga {
+	float: left;
+	height: 60px;
 }
 
 h2{
