@@ -87,55 +87,6 @@ nav{
 	z-index:1;
 }
 
-/* The subnavigation menu */
-.subnav {
-  float: center;
-} 
-
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 20px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0px 0px;
-  background-color: rgb(30,190,120);
-  font-family: 'Hind';
-  margin: 0;
-}
-
-/* Add a background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: rgb(30,190,120);
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: rgb(30,190,120);
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: center;
-  color: white;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: rgb(30,190,120);
-  color: rgb(150,250,230);
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
 
 section, main, aside{
 background:#fff;
@@ -168,7 +119,6 @@ aside{
 .left-img{
  width:100%;
  margin-bottom: 5px;
-
 }
 
 .left-images{
@@ -328,6 +278,82 @@ Images
 	margin-bottom:20px;
 }
 
+
+
+/*
+Overlay menu
+*/
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background:rgb(30,190,120);
+  overflow-x: hidden;
+  opacity: 0.95;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30px;
+  margin-top: 50px;
+}
+
+.overlay .grid-container{
+	  display: grid;
+grid-template-columns: 30% 20% 20% 30%;
+}
+
+
+.overlay .grid-item{
+}
+
+hr{
+	height: 1px;
+	opacity: 0.5;
+	border: none;
+    background-color: #fff;
+    color: #fff;
+}
+
+.overlay-right{
+border-left: 1px solid rgba(256,256,256,0.5);	
+padding-left:30px;
+margin-left:30px;
+}
+
+.overlay a { 
+  font-family: 'Hind';
+  padding: 8px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay h2{
+	font-family: 'Hind';
+	color:#fff;
+	opacity: 0.7;
+	font-size:30px;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color:rgb(150,250,230);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -50px;
+  right: 100px;
+  font-size: 60px;
+}
+
 /*
 screen responsiveness
 */
@@ -337,6 +363,12 @@ screen responsiveness
 	section{
 		display: none;
 	}
+
+	.left-images{
+		display: none;
+}
+
+
 .grid-container {
   display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -346,6 +378,8 @@ grid-template-columns: repeat(2, 1fr);
 	grid-template-columns: repeat(1, 1fr);
 
 }
+
+
 }
 
 
