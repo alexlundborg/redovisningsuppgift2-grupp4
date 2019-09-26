@@ -87,6 +87,56 @@ nav{
 	z-index:1;
 }
 
+/* The subnavigation menu */
+.subnav {
+  float: center;
+} 
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 0px;
+  background-color: rgb(30,190,120);
+  font-family: 'Hind';
+  margin: 0;
+}
+
+/* Add a background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(30,190,120);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(30,190,120);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: rgb(30,190,120);
+  color: rgb(150,250,230);
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
 section, main, aside{
 background:#fff;
 }
@@ -136,12 +186,12 @@ aside{
 
 
 .right{
-	padding-top:30px;
+	padding-top:5px;
 	font-family: 'Hind';
 	font-size:17px;
 	border-left:1px solid #ddd;
-	padding-left:20px;
-	margin-left:20px;
+	padding-left:5px;
+	margin-left:10px;
 	background:rgb(230,225,250);
 }
 
