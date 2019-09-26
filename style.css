@@ -354,11 +354,41 @@ margin-left:30px;
 
 .overlay .closebtn {
   position: absolute;
-  top: -50px;
+  top: -30px;
   right: 100px;
   font-size: 60px;
 }
 
+
+/*
+interaction
+
+*/
+
+select{
+	font-size:18px;
+}
+
+form{
+	font-family: 'Hind';
+	font-size:17px;
+
+}
+
+.text-input{
+	font-family: 'Hind';
+	font-size:17px;
+	width:300px;
+}
+
+form{
+	height:400px;
+}
+
+.submit{
+	font-family: 'Hind';
+	size:25px;
+}
 /*
 screen responsiveness
 */
