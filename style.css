@@ -94,7 +94,7 @@ nav{
 
 
 section, main, aside{
-background:#fff;
+	background:#fff;
 }
 
 section{
@@ -122,8 +122,8 @@ aside{
 }
 
 .left-img{
- width:100%;
- margin-bottom: 5px;
+	width:100%;
+	margin-bottom: 5px;
 }
 
 .left-images{
@@ -181,8 +181,8 @@ Grid
 */
 
 .grid-container {
-  display: grid;
-grid-template-columns: 25% 50% 25%;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
 }
 
 .grid-item{
@@ -200,39 +200,39 @@ Slideshow
 
 
 #slideshow { 
-    margin: auto; 
-    position: relative; 
-   	height:16vw;
-    padding: 0px; 
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+	margin: auto; 
+	position: relative; 
+	height:16vw;
+	padding: 0px; 
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
 }
 
 #slideshow img{
-    width: 100%; 
+	width: 100%; 
 
 }
 
 #slideshow > div { 
-    position: absolute; 
-   
+	position: absolute; 
+	
 }
 
 #slideshow2 { 
-    margin: auto; 
-    position: relative; 
-   	height:25vw;
-    padding: 0px; 
-   /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+	margin: auto; 
+	position: relative; 
+	height:25vw;
+	padding: 0px; 
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
 }
 
 #slideshow2 img{
-    width: 100%; 
+	width: 100%; 
 
 }
 
 #slideshow2 > div { 
-    position: absolute; 
-  
+	position: absolute; 
+	
 }
 
 
@@ -241,7 +241,7 @@ Countdown
 */
 
 .container {
-  	color: darkred;
+	color: darkred;
 }
 
 
@@ -250,9 +250,9 @@ li {
 	font-family: 'Playfair Display';
 	height:6em;
 	font-size: 1em;
-  	list-style-type: none;
+	list-style-type: none;
 	padding: 0em;
-  	text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 li span { 
@@ -290,27 +290,27 @@ Overlay menu
 */
 
 .overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 92px;
-  left: 0;
-  background:rgb(0,180,110);
-  overflow-x: hidden;
-  opacity: 0.97;
-  transition: 0.5s;
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 92px;
+	left: 0;
+	background:rgb(0,180,110);
+	overflow-x: hidden;
+	opacity: 0.97;
+	transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 70px;
-  margin-top: 50px;
+	position: relative;
+	top: 70px;
+	margin-top: 50px;
 }
 
 .overlay .grid-container{
-	  display: grid;
-grid-template-columns: 30% 20% 20% 30%;
+	display: grid;
+	grid-template-columns: 30% 20% 20% 30%;
 }
 
 
@@ -321,24 +321,24 @@ hr{
 	height: 1px;
 	opacity: 0.5;
 	border: none;
-    background-color: #fff;
-    color: #fff;
+	background-color: #fff;
+	color: #fff;
 }
 
 .overlay-right{
-border-left: 1px solid rgba(256,256,256,0.5);	
-padding-left:30px;
-margin-left:30px;
+	border-left: 1px solid rgba(256,256,256,0.5);	
+	padding-left:30px;
+	margin-left:30px;
 }
 
 .overlay a { 
-  font-family: 'Hind';
-  padding: 8px;
-  text-decoration: none;
-  font-size: 23px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
+	font-family: 'Hind';
+	padding: 8px;
+	text-decoration: none;
+	font-size: 23px;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
 }
 
 .overlay h2{
@@ -353,10 +353,10 @@ margin-left:30px;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: -30px;
-  right: 100px;
-  font-size: 60px;
+	position: absolute;
+	top: -30px;
+	right: 100px;
+	font-size: 60px;
 }
 
 
@@ -465,16 +465,16 @@ screen responsiveness
 		font-size:30px;
 	}
 
-.overlay {
+	.overlay {
 		top: 100px;
 
 	}
 
 	.overlay .closebtn {
-  position: absolute;
-  top: -30px;
-  right: 40px;
-}
+		position: absolute;
+		top: -30px;
+		right: 40px;
+	}
 
 }
 
@@ -508,34 +508,34 @@ screen responsiveness
 
 
 
-.overlay {
+	.overlay {
 		top: 100px;
 
 	}
 
 	.overlay .grid-container{
-	  display: grid;
-grid-template-columns: repeat(1, 1fr);
-}
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
 
-.overlay-content {
-	margin-left:20px;
-}
+	.overlay-content {
+		margin-left:20px;
+	}
 
-.overlay .closebtn {
-  position: absolute;
-  top: -30px;
-  right: 20px;
-}
+	.overlay .closebtn {
+		position: absolute;
+		top: -30px;
+		right: 20px;
+	}
 
-hr {
-	display: none;
-}
+	hr {
+		display: none;
+	}
 
-.overlay-right{
-	border:none;
-	margin-left:-20px;
-}
+	.overlay-right{
+		border:none;
+		margin-left:-20px;
+	}
 
 }
 
