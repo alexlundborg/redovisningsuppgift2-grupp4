@@ -528,6 +528,14 @@ grid-template-columns: repeat(1, 1fr);
   right: 20px;
 }
 
+hr {
+	display: none;
+}
+
+.overlay-right{
+	border:none;
+	margin-left:-20px;
+}
 
 }
 
