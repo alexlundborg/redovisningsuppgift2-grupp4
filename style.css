@@ -214,7 +214,7 @@ Slideshow
 
 #slideshow > div { 
 	position: absolute; 
-	
+
 }
 
 #slideshow2 { 
@@ -232,7 +232,7 @@ Slideshow
 
 #slideshow2 > div { 
 	position: absolute; 
-	
+
 }
 
 
@@ -434,13 +434,18 @@ screen responsiveness
 
 @media (min-width: 570px) and (max-width: 768px) {
 	
-	section, aside{
+	section, aside, .left-images{
 		display: none;
 	}
 	
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.bli-karnevalist{
+		grid-template-columns: repeat(1, 1fr);
+
 	}
 
 
@@ -476,12 +481,16 @@ screen responsiveness
 		right: 40px;
 	}
 
+	iframe{
+		width:320px;
+	}
+
 }
 
 
 @media (max-width: 570px) {
 
-	section, aside{
+	section, aside, .left-images{
 		display: none;
 	}
 	
@@ -489,7 +498,11 @@ screen responsiveness
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
+	
+	.bli-karnevalist{
+		grid-template-columns: repeat(1, 1fr);
 
+	}
 
 	header .grid-container {
 		display: grid;
@@ -535,6 +548,11 @@ screen responsiveness
 	.overlay-right{
 		border:none;
 		margin-left:-20px;
+	}
+
+
+	iframe{
+		width:320px;
 	}
 
 }
