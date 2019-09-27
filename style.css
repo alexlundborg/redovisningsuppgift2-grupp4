@@ -393,7 +393,7 @@ form{
 screen responsiveness
 */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 769px){
 
 	section{
 		display: none;
@@ -401,34 +401,136 @@ screen responsiveness
 
 	.left-images{
 		display: none;
+	}
+
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bli-karnevalist{
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+
+	header .grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+
+	h1 a{
+		font-size:30px;
+	}
+
+	.overlay {
+
+		top: 120px;
+
+	}
 }
 
-
-.grid-container {
-  display: grid;
-grid-template-columns: repeat(2, 1fr);
-}
-
-.bli-karnevalist{
-	grid-template-columns: repeat(1, 1fr);
-
-}
-
-
-}
-
-
-@media (max-width: 768px){
+@media (min-width: 570px) and (max-width: 768px) {
+	
 	section, aside{
-display: none;
+		display: none;
 	}
 	
 	.grid-container {
-  display: grid;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+	header .grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	h1 a{
+		font-size:25px;
+	}
+
+
+	.overlay a { 
+
+		font-size: 20px;
+
+	}
+
+	.overlay h2{
+
+		font-size:30px;
+	}
+
+.overlay {
+		top: 100px;
+
+	}
+
+	.overlay .closebtn {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+}
+
+}
+
+
+@media (max-width: 570px) {
+
+	section, aside{
+		display: none;
+	}
+	
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+	header .grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	h1 a{
+		font-size:25px;
+	}
+
+
+	.overlay h2{
+
+		font-size:20px;
+	}
+
+
+
+.overlay {
+		top: 100px;
+
+	}
+
+	.overlay .grid-container{
+	  display: grid;
 grid-template-columns: repeat(1, 1fr);
 }
 
+.overlay-content {
+	margin-left:20px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+}
 
 
 }
+
+
+
 
