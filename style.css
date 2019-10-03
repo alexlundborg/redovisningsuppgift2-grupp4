@@ -21,6 +21,23 @@ h1 a{
 	text-decoration: none;
 }
 
+#timer {
+  font-size: 26px;
+  font-family: 'Hind';
+  font-weight: bold;
+  color:#ff60c5;
+  margin:5px;
+  
+}
+
+#update {
+  font-family: 'Hind';
+  font-size:17px;
+	color:#ff60c5;
+	margin:5px;
+  
+}
+
 #logga {
 	float: left;
 	height: 60px;
