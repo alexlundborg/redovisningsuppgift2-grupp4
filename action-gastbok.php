@@ -67,15 +67,15 @@
 <header>
   <div class="grid-container">
   <div class="grid-item"></div>
-  <h1><a href="lundakarneval.html">Lundakarnevalen 2022</a></h1>
+  <h1><a href="index.html">Lundakarnevalen 2022</a></h1>
   <img id="logga" src="bilder/logo.png" >
 </div>
 </header>
 
 <nav>
-  <a style="cursor:pointer" onclick="openNav()">Bli karnevalist</a>
-  <a style="cursor:pointer" onclick="openNav2()">Om karnevalen!</a>
-  <a href="">Reservera biljetter</a>
+  <a class="openNav" style="cursor:pointer" onclick="openNav()">Bli karnevalist</a>
+  <a class="openNav" style="cursor:pointer" onclick="openNav2()">Om karnevalen!</a>
+ <a href="">Reservera biljetter</a>
   <a href="">Gästbok</a>
 </nav>
 <div class="grid-container">
@@ -96,8 +96,7 @@ $MEDDELANDE = $_POST["meddelande"];
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-echo "<h1>Gästbok</h1>";
-echo "Namn: " . $NAMN . " Meddelande: " . $MEDDELANDE;
+echo "<h2>Gästbok</h2>";
 
 /*
 $sql = "CREATE TABLE gastbok (namn varchar(255), meddelande varchar(1000))";
@@ -107,19 +106,23 @@ if ($db_conn->query($sql) === TRUE) {
 } else {
     echo "Fel: " . $sql . "<br>" . $db_conn->error;
 }
-
 */
-$sql = "INSERT INTO gastbok (namn, meddelande)
-VALUES ('$NAMN', '$MEDDELANDE')";
 
-if ($db_conn->query($sql) === TRUE) {
-    echo "New row created successfully";
+
+if (!empty($NAMN)) {
+  $sql = "INSERT INTO gastbok (namn, meddelande)
+  VALUES ('$NAMN', '$MEDDELANDE')";
+
+  if ($db_conn->query($sql) === TRUE) {
+    echo "<br />Din kommentar har laddats upp!<br /><br />";
 } else {
     echo "Fel: " . $sql . "<br>" . $db_conn->error;
 }
+}
 
 /*
-$sql = "DELETE FROM gastbok WHERE namn = 'test'";
+
+$sql = "DELETE FROM gastbok WHERE namn = 'Pelle'";
 
 if ($db_conn->query($sql) === TRUE) {
     echo "row deleted successfully";
@@ -133,7 +136,7 @@ $sql = "SELECT * FROM gastbok";
 
 if ($result=mysqli_query($db_conn,$sql))
   {
-    echo "<table style='border:1px solid #ccc; border-collapse: collapse;'><tr><td style='border:1px solid #ccc'>namn</td><td style='border:1px solid #ccc'>Meddelande</td></tr>";
+    echo "<table style='border:1px solid #ccc; border-collapse: collapse;'><tr><td style='border:1px solid #ccc'><b>Namn:</b></td><td style='border:1px solid #ccc'><b>Meddelande:</b></td></tr>";
   // Fetch one and one row
   while ($row=mysqli_fetch_row($result))
     {
@@ -149,6 +152,7 @@ if ($result=mysqli_query($db_conn,$sql))
 $db_conn->close();
 
 ?>
+<h2>Skriv i gästboken</h2>
 
 <form action="action-gastbok.php" method="post">
   <p>Namn:</p><input type="textbox" class="text-input" name="namn"><br />

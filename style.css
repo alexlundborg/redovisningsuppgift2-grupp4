@@ -450,6 +450,8 @@ form{
 	font-family: 'Hind';
 	font-size:17px;
 	width:300px;
+	background:rgba(256,256,0,0.1);
+
 }
 
 form{
@@ -465,7 +467,21 @@ textarea{
 	font-family: 'Hind';
 	font-size:17px;
 	width:300px;
+	background:rgba(256,256,0,0.1);
+
 }
+
+
+/*
+table
+*/
+
+td{
+	padding:5px;
+	min-width:150px;
+	background:rgba(256,256,0,0.1);
+}
+
 
 /*
 screen responsiveness
