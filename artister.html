@@ -69,7 +69,7 @@
 <nav>
   <a style="cursor:pointer" onclick="openNav()">Bli karnevalist</a>
   <a style="cursor:pointer" onclick="openNav2()">Om karnevalen!</a>
-  <a href="">Reservera biljetter</a>
+  <a href="reservera-biljetter.html">Reservera biljetter</a>
 </nav>
 
 
@@ -125,7 +125,11 @@ Stora scen, lilla scen, Krog Upp å Ner, smånöjen, tält, spontana framträdan
 
 
 <div class="footer-right">
-<h3>© 2019 Grupp 4</h3>
+<h4>© 2019 Grupp 4</h4>
+<h3>Nedräkning till Karnevalen</h3>
+<p id="timer"></p>
+<h3>Sidan senast uppdaterad</h3>
+<span id="update"></span>
 </div>
 
 
@@ -142,6 +146,7 @@ Stora scen, lilla scen, Krog Upp å Ner, smånöjen, tält, spontana framträdan
 
 </footer>
 
+<script src="script.js"></script>
 <script>
 function openNav() {
     document.getElementById("myNav2").style.display = "none";

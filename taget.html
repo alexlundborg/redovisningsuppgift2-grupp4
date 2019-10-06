@@ -69,19 +69,17 @@
 <nav>
   <a style="cursor:pointer" onclick="openNav()">Bli karnevalist</a>
   <a style="cursor:pointer" onclick="openNav2()">Om karnevalen!</a>
-  <a href="">Reservera biljetter</a>
+  <a href="reservera-biljetter.html">Reservera biljetter</a>
 </nav>
 
 
 <div class="bli-karnevalist">
 <div class="grid-item left-images">
 
-       <img class="left-img" src="bilder/tåget1.jpg">
-       <img class="left-img" src="bilder/tåget2.jpg">
-      <img class="left-img" src="bilder/tåget3.jpg">
-      <img class="left-img" src="bilder/tåget4.jpg">
-      <img class="left-img" src="bilder/tåget5.jpg">
-  
+     <img class="left-img" src="bilder/Karneval2010054.jpg">
+  <img class="left-img" src="bilder/Karnevalist.jpg">
+  <img class="left-img" src="bilder/Lundakarnevalen 2014 09.jpg">
+         
 </div>
   <div class="grid-item center">
   <h2>Tåget</h2>
@@ -129,7 +127,11 @@
 
 
 <div class="footer-right">
-<h3>© 2019 Grupp 4</h3>
+<h4>© 2019 Grupp 4</h4>
+<h3>Nedräkning till Karnevalen</h3>
+<p id="timer"></p>
+<h3>Sidan senast uppdaterad</h3>
+<span id="update"></span>
 </div>
 
 
@@ -146,6 +148,7 @@
 
 </footer>
 
+<script src="script.js"></script>
 <script>
 function openNav() {
     document.getElementById("myNav2").style.display = "none";

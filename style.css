@@ -15,10 +15,27 @@ FONTS
 
 h1 a{
 	font-family: 'Playfair Display';
-	color:blue;
+	color:#01a5e9;
 	font-weight:700;
 	font-size:40px;
 	text-decoration: none;
+}
+
+#timer {
+  font-size: 26px;
+  font-family: 'Hind';
+  font-weight: bold;
+  color:#ff60c5;
+  margin:5px;
+  
+}
+
+#update {
+  font-family: 'Hind';
+  font-size:17px;
+	color:#ff60c5;
+	margin:5px;
+  
 }
 
 #logga {
