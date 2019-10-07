@@ -100,6 +100,17 @@ aside p{
 structure
 */
 
+
+.openNav{
+	background:url("arrow.png");
+	background-position: right;
+	background-size: 10px;
+	background-repeat: no-repeat;
+	padding-right:15px;
+
+}
+
+
 header{
 	padding:10px;
 	text-align: center;
@@ -440,6 +451,8 @@ form{
 	font-family: 'Hind';
 	font-size:17px;
 	width:300px;
+	background:rgba(256,256,0,0.1);
+
 }
 
 form{
@@ -450,6 +463,27 @@ form{
 	font-family: 'Hind';
 	size:25px;
 }
+
+textarea{
+	font-family: 'Hind';
+	font-size:17px;
+	width:300px;
+	background:rgba(256,256,0,0.1);
+
+}
+
+
+/*
+table
+*/
+
+td{
+	padding:5px;
+	min-width:150px;
+	background:rgba(256,256,0,0.1);
+}
+
+
 /*
 screen responsiveness
 */
