@@ -33,3 +33,29 @@ var x = setInterval(function() {
 
 //Site last updated
 document.getElementById("update").innerHTML = document.lastModified;
+
+
+//form validation
+function validateForm() {
+  var x = document.forms["ansoksektion"]["fname"].value;
+  if (x == "") {
+    alert("Fyll i ditt förnamn");
+    return false;
+  }
+}
+function validateForm() {
+  var z = document.forms["ansoksektion"]["lname"].value;
+  if (z == "") {
+    alert("Fyll i ditt efternamn");
+    return false;
+  }
+}
+
+function validateForm() 
+{
+	var w = document.forms["ansoksektion"]["email"].value;
+ if (w == "") {
+    alert("Fyll i en korrekt email");
+    return (false)
+}
+
