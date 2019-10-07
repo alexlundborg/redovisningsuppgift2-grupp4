@@ -44,97 +44,11 @@
 
 
 
- <footer id="footer">
-
-<div class="wrap">
-
-<div class="footer-left">
-  <h4><p>Kontakta oss</p></h4>
-<h3></a><a href="mailto:name@email.com">info@lundakarneval.se</a></h3>
-<h3><a href="tel:+46 70 23 456 78">070-123 456 78</a></h3>
-<h3><a href="hitta-hit.html">Hitta hit</a></h3>
-<h3><a href="faq.html">FAQ</a></h3>
-</div>
-
-
-
-<div class="footer-right">
-<h4>© 2019 Grupp 4</h4>
-<h3>Nedräkning till Karnevalen</h3>
-<p id="timer"></p>
-<h3>Sidan senast uppdaterad</h3>
-<span id="update"></span>
-</div>
-
-
-
-<div class="footer-centered">
-  <h4><p>Sektioner</p></h4>
-<h3><a href="bladderiet.html">Blädderiet</a></h3>
-<h3><a href="dansen.html">Dansen</a></h3>
-<h3><a href="administerit.html">AdministerIT</a></h3>
-<h3><a href="biljonsen.html">Blijonsen</a></h3>
-</div>
-
-</div>
-
-</footer>
-
-
+ 
+<?php include 'footer.html';?>
 
 <script src="script.js"></script>
-<script type="text/javascript">
-	
-	const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
 
-let countDown = new Date('May 8, 2022 00:00:00').getTime(),
-    x = setInterval(function() {
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
-
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
-
-    }, second)
-
-function openNav() {
-    document.getElementById("myNav2").style.display = "none";
-    document.getElementById("myNav2").style.height = "0%";
-    document.getElementById("myNav").style.display = "block";
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.getElementById("myNav").style.display = "block";
-  document.getElementById("myNav2").style.display = "block";
-}
-
-function openNav2() {    
-    document.getElementById("myNav").style.display = "none";
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav2").style.display = "block";
-    document.getElementById("myNav2").style.height = "100%";
-}
-
-function closeNav2() {
-  document.getElementById("myNav2").style.height = "0%";
-  document.getElementById("myNav").style.display = "block";
-  document.getElementById("myNav2").style.display = "block";
-}
-
-</script>
 
 </body>

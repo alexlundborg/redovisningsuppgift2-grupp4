@@ -175,7 +175,11 @@ $db_conn->close();
 
 
 <div class="footer-right">
-<h3>© 2019 Grupp 4</h3>
+<h4>© 2019 Grupp 4</h4>
+<h3>Nedräkning till Karnevalen</h3>
+<p id="timer"></p>
+<h3>Sidan senast uppdaterad</h3>
+<span id="update"></span>
 </div>
 
 
@@ -191,7 +195,16 @@ $db_conn->close();
 </div>
 
 </footer>
+
+<script src="script.js"></script>
+
+
 <script>
+
+  //Timer countdown
+
+
+
 function openNav() {
     document.getElementById("myNav2").style.display = "none";
     document.getElementById("myNav2").style.height = "0%";

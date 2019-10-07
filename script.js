@@ -1,10 +1,3 @@
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
 
 
 //Timer countdown
@@ -117,7 +110,7 @@ function closeNav2() {
       day = hour * 24;
 
 let countDown = new Date('May 8, 2022 00:00:00').getTime(),
-    x = setInterval(function() {
+    a = setInterval(function() {
 
       let now = new Date().getTime(),
         distance = countDown - now;
