@@ -623,44 +623,50 @@ screen responsiveness
 		display: none;
 	}
 
-	section{
-		margin-bottom:500px;
-	}
-	
+
+
+
+.slideshow{
+	background:yellowgreen;
+	height: 500px;
+}
 
 
 #slideshow { 
 	margin: auto; 
 	position: relative; 
-	height:30vw;
+	height:250px;
 	padding: 0px; 
-	 box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
 }
 
+#slideshow img{
+	width: 100%; 
+
+}
 
 #slideshow > div { 
-	position: absolute; 
+	position: relative; 
 
 }
 
 #slideshow2 { 
+	margin-top: 10px; 
 	position: relative; 
-	height:30vw;
+	height:200px;
 	padding: 0px; 
-	margin-top:30vw;
-	background:red;
-	border:1px solid red;
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+}
 
-	box-shadow: 0 0 20px rgba(0,0,0,0.4);  
+#slideshow2 img{
+	width: 100%; 
+
 }
 
 #slideshow2 > div { 
-	position: absolute; 
-	margin-top:30vw;
-	border:1px solid red;
+	position: relative; 
 
 }
-
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
