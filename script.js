@@ -33,3 +33,30 @@ var x = setInterval(function() {
 
 //Site last updated
 document.getElementById("update").innerHTML = document.lastModified;
+
+
+//form validation
+function validateForm() {
+  var x = document.forms["ansoksektion"]["fname"].value;
+  if (x == "") {
+    alert("Formulär ej korrekt ifyllt");
+    return (false)
+  }
+}
+function validateForm() {
+  var z = document.forms["ansoksektion"]["lname"].value;
+  if (z == "") {
+    alert("Formulär ej korrekt ifyllt");
+    return (false)
+  }
+}
+
+function validateForm() 
+{
+	var w = document.forms["ansoksektion"]["email"].value;
+ if (w == "") {
+  }
+    alert("Formulär ej korrekt ifyllt");
+    return (false)
+}
+
