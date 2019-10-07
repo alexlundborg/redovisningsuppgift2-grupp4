@@ -60,3 +60,53 @@ function validateForm()
     return (false)
 }
 
+  $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+
+$("#slideshow2 > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow2 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow2');
+},  5000);
+
+
+function openNav() {
+    document.getElementById("myNav2").style.display = "none";
+    document.getElementById("myNav2").style.height = "0%";
+    document.getElementById("myNav").style.display = "block";
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.display = "block";
+  document.getElementById("myNav2").style.display = "block";
+}
+
+function openNav2() {    
+    document.getElementById("myNav").style.display = "none";
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav2").style.display = "block";
+    document.getElementById("myNav2").style.height = "100%";
+}
+
+function closeNav2() {
+  document.getElementById("myNav2").style.height = "0%";
+  document.getElementById("myNav").style.display = "block";
+  document.getElementById("myNav2").style.display = "block";
+}
+
+

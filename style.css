@@ -627,6 +627,40 @@ screen responsiveness
 		margin-bottom:500px;
 	}
 	
+
+
+#slideshow { 
+	margin: auto; 
+	position: relative; 
+	height:30vw;
+	padding: 0px; 
+	 box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+
+#slideshow > div { 
+	position: absolute; 
+
+}
+
+#slideshow2 { 
+	position: relative; 
+	height:30vw;
+	padding: 0px; 
+	margin-top:30vw;
+	background:red;
+	border:1px solid red;
+
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);  
+}
+
+#slideshow2 > div { 
+	position: absolute; 
+	margin-top:30vw;
+	border:1px solid red;
+
+}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
