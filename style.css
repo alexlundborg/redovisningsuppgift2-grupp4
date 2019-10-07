@@ -618,14 +618,20 @@ screen responsiveness
 
 @media (max-width: 570px) {
 
-	section, aside, .left-images{
+	aside, .left-images{
 		display: none;
+	}
+
+	section{
+		margin-bottom:500px;
 	}
 	
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+
 	
 	.bli-karnevalist{
 		grid-template-columns: repeat(1, 1fr);
