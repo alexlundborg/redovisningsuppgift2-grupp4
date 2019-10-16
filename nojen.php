@@ -9,8 +9,8 @@
 
 <?php include 'header.html';?>
 
+<div class="grid-container bli-karnevalist" id="content-paper">
 
-<div class="bli-karnevalist">
 <div class="grid-item left-images">
 
        <img class="left-img" src="bilder/Karneval2010088operab.jpg">
@@ -39,7 +39,6 @@
 
 </div>
 </div>
-
 
 
 

@@ -8,8 +8,8 @@
 <body>
 <?php include 'header.html';?>
 
-<div class="artister">
-<div class="grid-container">
+<div class="grid-container artister" id="content-paper">
+
 <div class="grid-item left-images">
 
        <img class="left-img" src="bilder/Karneval2010108b.jpg">
@@ -54,7 +54,7 @@ Stora scen, lilla scen, Krog Upp å Ner, smånöjen, tält, spontana framträdan
 
 </div>
 </div>
-</div>
+
 
 
 

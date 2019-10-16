@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind|Playfair+Display:400,700&display=swap');
 
 *{
 	margin:0;
 }
 
 body{
+	background: #a8aad7;
 }
 
 
@@ -14,11 +15,27 @@ FONTS
 */
 
 h1 a{
-	font-family: 'Playfair Display';
-	color:#01a5e9;
-	font-weight:700;
-	font-size:40px;
+	color:#000;
 	text-decoration: none;
+}
+
+#title{
+	float:right;
+	font-family: 'Playfair Display';
+	font-weight:500;
+	font-size:50px;
+  transition: 0.4s;
+
+}
+#subtitle{
+	font-family: 'Playfair Display';
+	color:#2c148b;
+	font-weight: 700;
+	float:right;
+	line-height: 1;
+	font-size:23px;
+	transition: 0.4s;
+
 }
 
 #timer {
@@ -39,8 +56,10 @@ h1 a{
 }
 
 #logga {
-	float: left;
-	height: 60px;
+	height:100px;
+	margin-left:10px;
+  transition: 0.4s;
+
 }
 
 h2{
@@ -73,16 +92,17 @@ main p {
 
 
 nav a{
-	font-family: 'Hind';
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 	text-decoration: none;
-	font-size:20px;
-	color:#fff;
-	margin-left:15px;
+	font-size:22px;
+	color:#000;
+	margin-left:20px;
 	transition: 0.1s linear;
 }
 
 nav a:hover{
-	color:rgb(150,250,230);
+	color:rgba(0,0,0,0.6);
 
 }
 
@@ -102,11 +122,11 @@ structure
 
 
 .openNav{
-	background:url("arrow.png");
+	background:url("bilder/arrow.png");
 	background-position: right;
 	background-size: 10px;
 	background-repeat: no-repeat;
-	padding-right:15px;
+	padding-right:17px;
 
 }
 
@@ -114,24 +134,73 @@ structure
 header{
 	padding:10px;
 	text-align: center;
-	background:rgb(250,210,230);
+	background:#f7d4d7;
 
 }
 
+.header-background{
+	background:#f7d4d7;
+	transition: 0.4s;
+	height:70px;
 
+}
+
+#header-container{
+	width:85%;
+	padding:20px;
+	margin:auto;
+	transition: 0.4s;
+	height:100px;
+
+}
+
+.brand{
+
+}
 
 nav{
-	background:rgb(30,190,120);
-	padding:30px;
-	text-align: center;
+	margin-top:5px;
+}
+
+#nav-padding{
+padding:30px;	
+  transition: 0.4s;
+
+}
+
+#sticky{
+	background:#f7cacd;
 	position: sticky;
 	top:0px;
 	z-index:1;
 }
 
 
+#content-paper{
+	background: #fff; 
+	width:85%;
+	margin:auto;
+	margin-top:-70px;
+	padding:20px;
+	transition: 0.4s;
+}
+
+/* .index-paper{
+ 	background: #fff url('bilder/flik.png');
+	background-repeat: no-repeat;
+	background-position: top right; 
+	background-size: 30px;
+	width:85%;
+	margin:auto;
+	margin-top:-70px;
+	padding:20px;
+	transition: 0.4s;
+	border-top-right-radius: 40px;
+}
+*/
+
+
 section, main, aside{
-	background:#fff;
 }
 
 section{
@@ -142,7 +211,7 @@ section{
 main{
 	padding:20px;
 	padding-right:30px;
-	margin-bottom: 150px;
+	margin-bottom: 30px;
 }
 
 aside{
@@ -197,6 +266,10 @@ aside{
     position: relative;
     overflow: hidden;
     text-align: left;
+    height:200px;
+    background:rgb(200,210,240);
+    	margin-top:50px;
+
 }
 
 .wrap {
@@ -204,7 +277,7 @@ aside{
     margin: 0 auto;
     padding: 20px;
     overflow: hidden;
-    background: #4bbfe1;
+    background:rgb(200,210,240);
   color: #fff;
     
   text-transform: uppercase;
@@ -215,7 +288,6 @@ aside{
     margin: 0;
   color: #fff;
     text-decoration: none;
-     background: #4bbfe1;
 }
 
 .clear {
@@ -230,7 +302,6 @@ aside{
 .footer-right {
     float: right;
     width: 25%;
-     background: #4bbfe1;
 }
     
 .footer-centered {
@@ -255,6 +326,11 @@ Grid
 .grid-container {
 	display: grid;
 	grid-template-columns: 25% 50% 25%;
+}
+
+.grid-container-header {
+	display: grid;
+	grid-template-columns: 31% 9% 60%;
 }
 
 .grid-item{
@@ -365,10 +441,9 @@ Overlay menu
 	height: 0;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
-	top: 92px;
+	z-index: 2;
+	top: 120px;
 	left: 0;
-	background:rgb(0,180,110);
 	overflow-x: hidden;
 	opacity: 0.97;
 	transition: 0.5s;
@@ -376,8 +451,9 @@ Overlay menu
 
 .overlay-content {
 	position: relative;
-	top: 70px;
+	top: 0px;
 	margin-top: 50px;
+
 }
 
 .overlay .grid-container{
@@ -393,12 +469,12 @@ hr{
 	height: 1px;
 	opacity: 0.5;
 	border: none;
-	background-color: #fff;
-	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+	color: rgba(0,0,0,0.6);
 }
 
 .overlay-right{
-	border-left: 1px solid rgba(256,256,256,0.5);	
+	border-left: 1px solid rgba(0,0,0,0.3);	
 	padding-left:30px;
 	margin-left:30px;
 }
@@ -408,20 +484,20 @@ hr{
 	padding: 8px;
 	text-decoration: none;
 	font-size: 23px;
-	color: #fff;
+	color: rgb(0,0,200);
 	display: block;
 	transition: 0.3s;
 }
 
 .overlay h2{
 	font-family: 'Hind';
-	color:#fff;
+	color:#000;
 	opacity: 0.7;
 	font-size:30px;
 }
 
 .overlay a:hover, .overlay a:focus {
-	color:rgb(150,250,230);
+	color:rgba(0,0,200,0.5);
 }
 
 .overlay .closebtn {

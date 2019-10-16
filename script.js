@@ -1,4 +1,81 @@
 
+var navOpen = false;
+
+function openNav() {
+    document.getElementById("myNav2").style.display = "none";
+    document.getElementById("myNav2").style.height = "0%";
+    document.getElementById("myNav").style.display = "block";
+   document.getElementById("myNav").style.height = "400px";
+    document.getElementById("header-container").style.height = "500px";
+    navOpen = true;
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.display = "block";
+  document.getElementById("myNav2").style.display = "block";
+  document.getElementById("header-container").style.height = "100px";
+    navOpen = false;
+
+}
+
+function openNav2() {    
+    document.getElementById("myNav").style.display = "none";
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav2").style.display = "block";
+    document.getElementById("myNav2").style.height = "400px";
+    document.getElementById("header-container").style.height = "500px";
+    navOpen = true;
+
+}
+
+function closeNav2() {
+  document.getElementById("myNav2").style.height = "0%";
+  document.getElementById("myNav").style.display = "block";
+  document.getElementById("myNav2").style.display = "block";
+  document.getElementById("header-container").style.height = "100px";
+    navOpen = false;
+
+}
+// When the user scrolls down 1px from the top of the document, resize the navbar's padding and the logo's font size
+
+
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1 && !navOpen || document.documentElement.scrollTop > 1 && !navOpen) {
+    document.getElementById("nav-padding").style.padding = "10px";
+   document.getElementById("header-container").style.padding = "50px 5px 5px 5px";
+    document.getElementById("header-container").style.height = "70px";
+    document.getElementById("title").style.fontSize = "30px";
+    document.getElementById("subtitle").style.fontSize = "15px";
+      document.getElementById("logga").style.height = "60px";
+      document.getElementById("content-paper").style.margin = "40px auto 0 auto";
+  document.getElementById("myNav").style.height = "0";
+  document.getElementById("myNav2").style.height = "0";
+
+  if (document.body.scrollTop > 50 && !navOpen || document.documentElement.scrollTop > 50 && !navOpen) {
+       document.getElementById("header-container").style.padding = "5px";
+
+}
+
+  } else if (!navOpen){
+    document.getElementById("nav-padding").style.padding = "30px";
+  document.getElementById("header-container").style.padding = "20px";
+  document.getElementById("header-container").style.height = "100px";
+    document.getElementById("title").style.fontSize = "50px";
+    document.getElementById("subtitle").style.fontSize = "23px";
+      document.getElementById("logga").style.height = "100px";
+      document.getElementById("content-paper").style.margin = "-70px auto 0 auto";
+
+  }
+
+  else {
+        document.getElementById("header-container").style.height = "600px";
+
+  }
+}
 
 //Timer countdown
 var countDownDate = new Date("may 8, 2022 15:37:25").getTime();
@@ -46,7 +123,7 @@ function validateForm() {
 
 function validateForm() 
 {
-	var w = document.forms["ansoksektion"]["email"].value;
+  var w = document.forms["ansoksektion"]["email"].value;
  if (w == "") {
   }
     alert("Formulär ej korrekt ifyllt");
@@ -77,54 +154,9 @@ setInterval(function() {
 },  5000);
 
 
-function openNav() {
-    document.getElementById("myNav2").style.display = "none";
-    document.getElementById("myNav2").style.height = "0%";
-    document.getElementById("myNav").style.display = "block";
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.getElementById("myNav").style.display = "block";
-  document.getElementById("myNav2").style.display = "block";
-}
-
-function openNav2() {    
-    document.getElementById("myNav").style.display = "none";
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav2").style.display = "block";
-    document.getElementById("myNav2").style.height = "100%";
-}
-
-function closeNav2() {
-  document.getElementById("myNav2").style.height = "0%";
-  document.getElementById("myNav").style.display = "block";
-  document.getElementById("myNav2").style.display = "block";
-}
 
 
-	const second = 1000,
-     minute = second * 60,
-    hour = minute * 60,
-      day = hour * 24;
 
-let countDown = new Date('May 8, 2022 00:00:00').getTime(),
-    a = setInterval(function() {
 
-      let now = new Date().getTime(),
-        distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
-
-    }, second)
 

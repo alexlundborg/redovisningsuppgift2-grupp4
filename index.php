@@ -13,10 +13,10 @@
 <?php include 'header.html';?>
 
 
-<div class="grid-container">
+<div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
-	<h3>Karnevalståget</h3>
-	<div id="slideshow">
+  <h3>Karnevalståget</h3>
+  <div id="slideshow">
    <div>
      <img src="bilder/Karneval2010042.jpg">
    </div>
@@ -25,7 +25,7 @@
    </div>
   
 </div>
-		<h3>Karnevalister</h3>
+    <h3>Karnevalister</h3>
 <div id="slideshow2">
    <div>
      <img src="bilder/Karneval2010015.jpg">
@@ -44,7 +44,7 @@
 </section>
 
 <main>
-	<h2>Det är på gång!</h2>
+  <h2>Det är på gång!</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur nibh at dui hendrerit fringilla. Cras id velit nisl. In convallis dolor eu lacus ultrices porta. Maecenas mi diam, elementum vel mollis sed, porttitor at justo. Morbi at feugiat sem, sollicitudin viverra augue. Suspendisse quam nisl, tempor nec posuere ut, fermentum eget elit. Nullam nec suscipit erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent egestas, neque sit amet lobortis aliquet, nisl justo blandit ipsum, sit amet tincidunt diam lectus vitae velit. Vivamus vitae lacus lorem. Praesent bibendum nunc molestie, finibus augue id, blandit ligula. Ut vitae turpis sed nulla molestie pulvinar eu vel magna.</p>
 <img src="bilder/Lundakarnevalen 2010 33.jpg" id="main-image"> 
 <p>
@@ -56,18 +56,18 @@ Vivamus convallis dolor a ligula feugiat, vel tempus lectus vestibulum. Phasellu
 </main>
 
 <aside>
-	<div class="news">
+  <div class="news">
         <img src="bilder/Karneval2010082.jpg" id="event1">
 
-		<h3>Oktoberevent</h3>
+    <h3>Oktoberevent</h3>
     <p>Morbi vehicula felis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis vehicula vulputate. Fusce maximus nisi tellus, sed lobortis sapien vestibulum nec. Cras condimentum, orci sed dapibus congue, arcu sem hendrerit eros, eu pulvinar metus velit sed justo.
     </p>
-	</div>
-	<div class="news">
-		<h3>Novemberevent</h3>
+  </div>
+  <div class="news">
+    <h3>Novemberevent</h3>
     <p>
     Aliquam sapien quam, cursus sed enim id, varius sagittis enim. Morbi ut lacus sodales, pretium neque vel, tempus nisi. Ut at pulvinar enim. Aenean ut turpis tellus. Maecenas porta tempus ligula, quis fringilla purus tincidunt eu. </p>
-	</div>
+  </div>
 </aside>
 </div>
 
