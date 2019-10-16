@@ -9,7 +9,7 @@
 
 <?php include 'header.html';?>
 
-<div class="bli-karnevalist">
+<div class="grid-container bli-karnevalist" id="content-paper">
 <div class="grid-item left-images">
 
      <img class="left-img" src="bilder/Karneval2010054.jpg">

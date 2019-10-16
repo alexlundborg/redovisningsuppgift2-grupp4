@@ -11,7 +11,7 @@
 
 
 
-<div class="bli-karnevalist">
+<div class="grid-container bli-karnevalist" id="content-paper">
 <div class="grid-item left-images">
 
        

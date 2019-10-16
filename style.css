@@ -14,7 +14,7 @@ body{
 FONTS
 */
 
-h1 a{
+h1{
 	color:#000;
 	text-decoration: none;
 }
@@ -42,7 +42,7 @@ h1 a{
   font-size: 26px;
   font-family: 'Hind';
   font-weight: bold;
-  color:#ff60c5;
+  color:rgb(100,80,250);
   margin:5px;
   
 }
@@ -50,7 +50,7 @@ h1 a{
 #update {
   font-family: 'Hind';
   font-size:17px;
-	color:#ff60c5;
+  color:rgb(100,80,250);
 	margin:5px;
   
 }
@@ -266,19 +266,19 @@ aside{
     position: relative;
     overflow: hidden;
     text-align: left;
-    height:200px;
+    height:300px;
     background:rgb(200,210,240);
-    	margin-top:50px;
+    margin-top:50px;
 
 }
 
 .wrap {
     position: relative;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     overflow: hidden;
     background:rgb(200,210,240);
-  color: #fff;
+  color: #000;
     
   text-transform: uppercase;
 }
@@ -286,7 +286,7 @@ aside{
 #footer h3 a,
 #footer h3 p {
     margin: 0;
-  color: #fff;
+  color: rgb(0,0,150);
     text-decoration: none;
 }
 

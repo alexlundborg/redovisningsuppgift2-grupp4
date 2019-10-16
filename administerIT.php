@@ -13,8 +13,8 @@
 
 
   <?php include 'header.html';?>
+<div class="grid-container bli-karnevalist" id="content-paper">
 
-<div class="grid-container">
 <div>
 	
 </div>
