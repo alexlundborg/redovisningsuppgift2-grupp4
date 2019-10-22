@@ -7,8 +7,6 @@ function openNav() {
     document.getElementById("myNav").style.display = "block";
    document.getElementById("myNav").style.height = "400px";
     document.getElementById("header-container").style.height = "500px";
-        document.getElementById("header-container-m").style.height = "500px";
-
     navOpen = true;
 }
 
@@ -17,8 +15,6 @@ function closeNav() {
   document.getElementById("myNav").style.display = "block";
   document.getElementById("myNav2").style.display = "block";
   document.getElementById("header-container").style.height = "100px";
-    document.getElementById("header-container-m").style.height = "100px";
-
     navOpen = false;
 
 }
@@ -29,8 +25,6 @@ function openNav2() {
     document.getElementById("myNav2").style.display = "block";
     document.getElementById("myNav2").style.height = "400px";
     document.getElementById("header-container").style.height = "500px";
-        document.getElementById("header-container-m").style.height = "500px";
-
     navOpen = true;
 
 }
@@ -40,8 +34,6 @@ function closeNav2() {
   document.getElementById("myNav").style.display = "block";
   document.getElementById("myNav2").style.display = "block";
   document.getElementById("header-container").style.height = "100px";
-    document.getElementById("header-container-m").style.height = "100px";
-
     navOpen = false;
 
 }
@@ -56,8 +48,6 @@ function scrollFunction() {
     document.getElementById("nav-padding").style.padding = "10px";
    document.getElementById("header-container").style.padding = "50px 5px 5px 5px";
     document.getElementById("header-container").style.height = "70px";
-     document.getElementById("header-container-m").style.padding = "5px 5px 5px 5px";
-    document.getElementById("header-container-m").style.height = "50px";
     document.getElementById("title").style.fontSize = "30px";
     document.getElementById("subtitle").style.fontSize = "15px";
       document.getElementById("logga").style.height = "60px";
@@ -74,8 +64,6 @@ function scrollFunction() {
     document.getElementById("nav-padding").style.padding = "30px";
   document.getElementById("header-container").style.padding = "20px";
   document.getElementById("header-container").style.height = "100px";
-    document.getElementById("header-container-m").style.padding = "5px";
-  document.getElementById("header-container-m").style.height = "60px";
     document.getElementById("title").style.fontSize = "50px";
     document.getElementById("subtitle").style.fontSize = "23px";
       document.getElementById("logga").style.height = "100px";
@@ -135,7 +123,7 @@ function validateForm() {
 
 function validateForm() 
 {
-  var w = document.forms["ansoksektion"]["email"].value;
+	var w = document.forms["ansoksektion"]["email"].value;
  if (w == "") {
   }
     alert("Formulär ej korrekt ifyllt");
@@ -164,7 +152,6 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow2');
 },  5000);
-
 
 
 

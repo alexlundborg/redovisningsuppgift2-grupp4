@@ -5,7 +5,7 @@
 }
 
 body{
-	background: #a8aad7;
+	background: #eee;
 }
 
 
@@ -15,7 +15,7 @@ FONTS
 */
 
 h1{
-	color:#000;
+	color:#fff;
 	text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ h1{
 	float:right;
 	font-family: 'Playfair Display';
 	font-weight:500;
-  transition: 0.4s;
+  	transition: 0.4s;
 
 }
 #subtitle{
@@ -132,7 +132,7 @@ structure
 header{
 	padding:10px;
 	text-align: center;
-	background:#f7d4d7;
+	background:blue;
 
 }
 
