@@ -228,6 +228,14 @@ aside{
 }
 
 
+.post{
+	padding-bottom: 10px;
+	margin-bottom:50px;
+	border-bottom:1px solid #ddd;
+	white-space: pre-wrap;
+}
+
+
 .bli-karnevalist{
 	min-height:100vh;
 	margin:auto;
@@ -555,6 +563,27 @@ textarea{
 
 }
 
+.success-notice{
+	font-family: Tahoma;
+	font-size: 13px;
+	margin-top:70px;
+	width:98%;
+	padding:10px;
+	border-radius: 5px;
+	background: rgb(170,240,150);
+	border:1px solid rgb(100,200,100);
+}
+
+.error-notice{
+	margin-top:70px;
+	font-family: Tahoma;
+	font-size: 13px;
+	width:98%;
+	padding:10px;
+	border-radius: 5px;
+	background: rgb(256,170,170);
+	border:1px solid rgb(200,100,100);
+}
 
 /*
 table

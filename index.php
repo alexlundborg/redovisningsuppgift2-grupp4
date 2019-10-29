@@ -44,6 +44,40 @@
 </section>
 
 <main>
+
+  <?php
+define('DB_USER', '4003497_vu37133');
+define('DB_PASSWORD','wwHe25Ng');
+define('DB_HOST','my06s.sqlserver.se');
+define('DB_NAME','4003497-db4');
+
+
+$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+OR die ('No DB-connection via MySQLi');
+
+$sql = "SELECT * FROM BloggInlaggPlus ORDER BY inlaggID DESC";
+
+
+if ($result=mysqli_query($db_conn,$sql))
+  {
+   
+  // Fetch one and one row
+  while ($row=mysqli_fetch_row($result))
+    {
+    printf ("<div class='post'><h2>%s</h2> <p>%s</p></div> \n",$row[1],$row[2]);
+    }
+
+   
+  // Free result set
+  mysqli_free_result($result);
+}
+
+
+$db_conn->close();
+
+?>
+
+
   <h2>Det är på gång!</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur nibh at dui hendrerit fringilla. Cras id velit nisl. In convallis dolor eu lacus ultrices porta. Maecenas mi diam, elementum vel mollis sed, porttitor at justo. Morbi at feugiat sem, sollicitudin viverra augue. Suspendisse quam nisl, tempor nec posuere ut, fermentum eget elit. Nullam nec suscipit erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent egestas, neque sit amet lobortis aliquet, nisl justo blandit ipsum, sit amet tincidunt diam lectus vitae velit. Vivamus vitae lacus lorem. Praesent bibendum nunc molestie, finibus augue id, blandit ligula. Ut vitae turpis sed nulla molestie pulvinar eu vel magna.</p>
 <img src="bilder/Lundakarnevalen 2010 33.jpg" id="main-image"> 
@@ -56,6 +90,39 @@ Vivamus convallis dolor a ligula feugiat, vel tempus lectus vestibulum. Phasellu
 </main>
 
 <aside>
+ <?php
+define('DB_USER', '4003497_vu37133');
+define('DB_PASSWORD','wwHe25Ng');
+define('DB_HOST','my06s.sqlserver.se');
+define('DB_NAME','4003497-db4');
+
+
+$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+OR die ('No DB-connection via MySQLi');
+
+$sql = "SELECT * FROM Event ORDER BY eventID DESC";
+
+
+if ($result=mysqli_query($db_conn,$sql))
+  {
+   
+  // Fetch one and one row
+  while ($row=mysqli_fetch_row($result))
+    {
+    printf ("<div class='news'><h3>%s</h3> <p>%s</p></div> \n",$row[1],$row[2]);
+    }
+
+   
+  // Free result set
+  mysqli_free_result($result);
+}
+
+
+$db_conn->close();
+
+?>
+
+
   <div class="news">
         <img src="bilder/Karneval2010082.jpg" id="event1">
 

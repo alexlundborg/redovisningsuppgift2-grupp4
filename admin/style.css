@@ -132,14 +132,20 @@ structure
 header{
 	padding:10px;
 	text-align: center;
-	background:#324bb8;
+	background:#324bb8 url('bigballoontop.png');
+	background-position: right;
+	background-size:contain;
+	background-repeat: no-repeat;
 
 }
 
 .header-background{
-	background:#324bb8;
+	background:#324bb8 url('bigballoonbottom.png');
+	background-position: right;
+	background-size:contain;
+	background-repeat: no-repeat;
 	transition: 0.4s;
-	height:70px;
+	height:60px;
 
 }
 
@@ -176,7 +182,6 @@ padding:30px;
 }
 
 #sticky{
-	background:#f7cacd;
 	position: sticky;
 	top:0px;
 	z-index:1;
@@ -208,16 +213,7 @@ padding:30px;
 	margin-top:10px;
 }
 
-.change{
-	background:darkblue;
-	color:#fff;
-	border-radius: 5px;
-	text-decoration: none;
-	padding:10px;
-	float:right;
-	margin-top:-10px;
-	margin-left:10px;
-}
+
 
 #search{
 	font-size:18px;
@@ -227,6 +223,7 @@ padding:30px;
 #select-tabell {
 	font-size:18px;
 	padding:5px;
+	margin-top:5px;
 }
 
 
@@ -236,6 +233,64 @@ padding:30px;
 
 .left{
 	float:left;
+}
+
+.search{
+	float:right;
+}
+
+#titel{
+	font-size: 25px;
+	width: 100%;
+}
+
+#brodtext{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:16px;
+	height:250px;
+	width:100%;
+	border-color: #ddd;
+}
+
+.success-notice{
+	font-family: Tahoma;
+	font-size: 13px;
+	margin-top:20px;
+	width:98%;
+	padding:10px;
+	border-radius: 5px;
+	background: rgb(170,240,150);
+	border:1px solid rgb(100,200,100);
+}
+
+.error-notice{
+	font-family: Tahoma;
+	font-size: 13px;
+	margin-top:20px;
+	width:98%;
+	padding:10px;
+	border-radius: 5px;
+	background: rgb(256,170,170);
+	border:1px solid rgb(200,100,100);
+}
+
+#signedIn{
+	float:right;
+	font-family: Tahoma;
+	font-size: 15px;
+	color:#fff;
+	padding:5px;
+
+}
+
+#signedIn a{
+	clear:all;
+	text-decoration: none;
+	color:#fff;
+	background:rgba(0,0,0,0.5);
+	padding:10px;
+
 }
 
 section{
@@ -255,14 +310,12 @@ section a{
 	float:right;
 }
 
+
 #active{
 	color:#fff;
 	background:#324bb8;
 }
 
-main{
-	overflow-y: scroll;
-}
 
 /* .index-paper{
  	background: #fff url('bilder/flik.png');
@@ -290,8 +343,10 @@ section{
 main{
 	padding:20px;
 	padding-right:30px;
-	margin-bottom: 30px;
+	overflow-y: scroll;
+
 }
+
 
 aside{
 	padding:20px;
@@ -607,24 +662,96 @@ form{
 
 }
 
-form{
-	height:400px;
+#username{
+	font-family: 'Hind';
+	font-size:17px;
+}
+
+#password{
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family: 'Hind';
+	font-size:17px;
 }
 
 .submit{
-	font-family: 'Hind';
-	size:25px;
+	font-family: 'Tahoma';
+	font-size:15px;
+	clear:style;
+	background:#324bb8;
+	border: 1px solid darkblue;
+	color:#fff;
+	border-radius: 10px;
+	padding:10px;
 }
 
-textarea{
-	font-family: 'Hind';
-	font-size:17px;
-	width:300px;
-	background:rgba(256,256,0,0.1);
+.submit:hover{
+	background:rgb(105,110,210);
+}
 
+.current-sektion{
+	font-size:15px;
+	background:#fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding:10px;
+	color:#555;
+	margin-left:10px;
+	float:right;
+	margin-top:-30px;
+}
+
+.change{
+	font-size:15px;
+	background:rgb(50,50,150);
+	border:1px solid rgb(0,0,100);
+	color:#fff;
+	border-radius: 10px;
+	text-decoration: none;
+	padding:10px;
+	float:right;
+	margin-top:-30px;
+	margin-left:10px;
 }
 
 
+.top-bar{
+	padding:10px;
+	height:35px;
+	border-bottom:1px solid #ddd;
+	width:99%;
+}
+
+.show{
+	font-size:15px;
+	background:rgb(50,50,150);
+	border:1px solid rgb(0,0,100);
+	color:#fff;
+	border-radius: 10px;
+	text-decoration: none;
+	padding:7px;
+	float:right;
+	margin-left:10px;
+}
+
+button.delete{
+	font-family: 'Tahoma';
+	font-size:15px;
+	clear:style;
+	color:#fff;
+	border-radius: 10px;
+	padding:10px;
+	margin-top:-30px;
+	margin-left:10px;
+	float:right;
+	background:rgb(200,0,0);
+	border:1px solid rgb(170,0,0);
+}
+
+button.delete:hover{
+		background:rgb(210,100,100);
+
+}
 /*
 table
 */

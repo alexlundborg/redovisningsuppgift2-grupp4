@@ -20,11 +20,14 @@
 </div>
 
 <main>
-	<h2>Ansök till sektion</h2>
+	
+<h2>Ansök till sektion</h2>
 <p>
 Välj sektion
 </p>
-<select>
+<form action="action-ansok.php" method="post">
+
+<select name="sektion">
   <option value="AdministerIT">AdministerIT</option>
   <option value="Biljonsen">Biljonsen</option>
   <option value="Blädderiet">Blädderiet</option>
@@ -32,9 +35,8 @@ Välj sektion
 </select>
 <br />
 <br />
-<form>
-  Förnamn: <br /><input class="text-input" type="text" name="first-name"><br /><br />
-  Efternamn: <br /><input class="text-input" type="text" name="last-name"><br /><br />
+  Förnamn: <br /><input class="text-input" type="text" name="fornamn"><br /><br />
+  Efternamn: <br /><input class="text-input" type="text" name="efternamn"><br /><br />
   E-mail: <br /><input class="text-input" type="text" name="mail">
 
 <br /><br />
