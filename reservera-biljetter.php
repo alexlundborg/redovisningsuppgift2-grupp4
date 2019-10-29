@@ -14,7 +14,7 @@
 
   <?php include 'header.html';?>
   
-<div class="grid-container bli-karnevalist" id="content-paper">
+<div class="grid-container reservera-biljetter" id="content-paper-reservera">
 <div>
   
 </div>
@@ -22,8 +22,42 @@
 <main>
   <h2>Reservera biljetter</h2>
 <p>
-Sidan är under uppbyggnad
-<br /><br />
+Välj nöje 
+</p>
+<form action="action-reservera-biljetter.php" method="post">
+
+<select name="noje">
+  <option value="Cirkusen">Cirkusen</option>
+  <option value="Dansen">Dansen</option>
+  <option value="Barnevalen">Barnevalen</option>
+  
+</select>
+<br />
+<p>
+Antal biljetter 
+</p>
+<select name="biljettantal">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="47">47</option>
+
+  
+</select>
+
+<br />
+  Förnamn: <br /><input class="text-input" type="text" name="fornamn"><br /><br />
+  Efternamn: <br /><input class="text-input" type="text" name="efternamn"><br /><br />
+  E-mail: <br /><input class="text-input" type="text" name="mail">
+
+
+  <input class="submit" type="submit">
+ <br /><br /> 
+ 
+</form>
+
+
 </p>
 </main>
 

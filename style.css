@@ -192,6 +192,16 @@ padding:30px;
 	transition: 0.4s;
 }
 
+#content-paper-reservera{
+	background: #fff; 
+	width:85%;
+	margin:auto;
+	margin-top:-70px;
+	padding:20px;
+	transition: 0.4s;
+	padding-bottom:200px;
+}
+
 /* .index-paper{
  	background: #fff url('bilder/flik.png');
 	background-repeat: no-repeat;
@@ -949,6 +959,17 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.row{
+	clear:left;
+	width:95%;
+	height: 100px;
+	background:red;
+	font-family: Tahoma;
+	font-size:24px;
+	padding:20px;
+	margin-top:10px;
 }
 
 
