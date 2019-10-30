@@ -213,7 +213,23 @@ padding:30px;
 	margin-top:10px;
 }
 
+.change-row{
+	clear:left;
+	width:95%;
+	background:#eee;
+	font-family: Tahoma;
+	font-size:18px;
+	padding:20px;
+	margin-top:10px;
+	padding-bottom:80px;
+}
 
+
+.mail{
+	font-size:15px;
+	color:#444;
+	margin-top:3px;
+}
 
 #search{
 	font-size:18px;
@@ -460,6 +476,11 @@ Grid
 	grid-template-columns: 25% 50% 25%;
 }
 
+.grid-container-change {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
 .grid-container-header {
 	display: grid;
 	grid-template-columns: 31% 9% 60%;
@@ -698,7 +719,8 @@ form{
 	color:#555;
 	margin-left:10px;
 	float:right;
-	margin-top:-30px;
+	margin-top:-40px;
+	margin-right:155px;
 }
 
 .change{
@@ -710,8 +732,8 @@ form{
 	text-decoration: none;
 	padding:10px;
 	float:right;
-	margin-top:-30px;
-	margin-left:10px;
+	margin-top:-40px;
+	margin-right:75px;
 }
 
 
@@ -741,7 +763,7 @@ button.delete{
 	color:#fff;
 	border-radius: 10px;
 	padding:10px;
-	margin-top:-30px;
+	margin-top:-40px;
 	margin-left:10px;
 	float:right;
 	background:rgb(200,0,0);
@@ -752,6 +774,38 @@ button.delete:hover{
 		background:rgb(210,100,100);
 
 }
+
+
+#change-fornamn, #change-efternamn, #change-email{
+	font-size:18px;
+	width:90%;
+	padding:5px;
+}
+
+#change-sektion{
+	width:90%;
+
+}
+
+
+.submit-change{
+	font-size:15px;
+	background:rgb(50,50,150);
+	border:1px solid rgb(0,0,100);
+	color:#fff;
+	border-radius: 10px;
+	text-decoration: none;
+	padding:10px;
+	float:right;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.submit-change:hover{
+		background:rgb(50,100,200);
+
+}
+
 /*
 table
 */

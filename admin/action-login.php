@@ -106,7 +106,7 @@ if(!CheckLoginInDB($username,$password))
       <div class="grid-container" id="content-paper">
         <section id="show-on-mobile">
 
-           <li> <a href="studenter.php">Studenter</a> </li>
+           <li> <a href="studenter.php">Ansökningar</a> </li>
 
            <li>  <a href="nytt-inlagg.php">Nytt inlägg</a> </li>
 
@@ -120,7 +120,7 @@ if(!CheckLoginInDB($username,$password))
   echo $_SESSION['user_id'];
 ?>!</h2>
 
-
+  <p>Välj ett alternativ i menyn till vänster.  <br /><br/>I <i>Ansökningar</i> kan du se alla ansökande studenter, se alla ansökningar för en särskild sektion, söka på en särskild student, se och ändra en students uppgifter samt ta bort ansökningar. <br /><br />I <i>Nytt inlägg</i> kan du skriva nya inlägg på startsidan och ta bort befintliga. <br /><br />I <i>Ny händelse</i> kan du skriva nya händelser på startsidan och ta bort befintliga. </p>
 
 
     </main>

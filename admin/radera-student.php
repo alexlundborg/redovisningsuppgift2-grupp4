@@ -56,8 +56,11 @@ if ( isset( $_SESSION['user_id'] ) ) {
 </form>
 </div>
 <div class="search">
-  <input id="search" placeholder="Sök...">
-</div>
+  <form action="search-student.php" method="post">
+  <input id="search" name="searchQuery" placeholder="Sök...">
+      <button type="submit" class="show">Sök</button>
+    </form>
+  </div>
 </div>
 
 <?php
