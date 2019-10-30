@@ -26,32 +26,22 @@ if ( isset( $_SESSION['user_id'] ) ) {
 
 <body>
 
-
-    <?php include 'header.php';?>
+  <?php include 'header.php';?>
 
 
 <div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
 	
- <li> <a href="studenter.php">Ansökningar</a> </li>
+ <li> <a id="active" href="studenter.php">Ansökningar</a> </li>
 
 <li>  <a href="nytt-inlagg.php">Nytt inlägg</a> </li>
 
-<li>  <a  id="active" href="">Ny händelse</a> </li>
+<li>  <a href="ny-handelse.php">Ny händelse</a> </li>
 
 </section>
 
 <main>
- 
-
-<h2>Skapa en händelse</h2>
-<form action="action-ny-handelse.php" method="post">
-  
- <input id="titel" name="titel" placeholder="Titel"><br />
-  <textarea id="brodtext" name="brodtext"></textarea><br/>
-  <input class="submit" type="submit" value="Skapa händelse">
-</form>
-
+    
 <?php
 define('DB_USER', '4003497_vu37133');
 define('DB_PASSWORD','wwHe25Ng');
@@ -62,15 +52,7 @@ $ID = $_POST["id"];
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-$sql = "DELETE FROM Event WHERE eventID = '$ID'";
-
-if ($db_conn->query($sql) === TRUE) {
-    echo "<div class='success-notice'>händelse raderad</div>";
-} else {
-    echo "Fel: " . $sql . "<br>" . $db_conn->error;
-}
-
-$sql = "SELECT * FROM Event ORDER BY eventID DESC";
+$sql = "SELECT * FROM User";
 
 
 if ($result=mysqli_query($db_conn,$sql))
@@ -79,8 +61,9 @@ if ($result=mysqli_query($db_conn,$sql))
   // Fetch one and one row
   while ($row=mysqli_fetch_row($result))
     {
-   printf ("<div class='row'> %s <form action='action-radera-handelse.php' method='post'>  <button name='id' class='delete' type='submit' value='%s'>Radera</button></form>
-</div> \n",$row[1],$row[0]);
+    printf ("<div class='change-row'><form action='action-change-profile.php' method='post'><div class='grid-container-change'><div><h3>Namn</h3><input id='change-fornamn' name='change-namn' value='%s'> </div><div><h3>Lösenord</h3><input id='change-efternamn' name='change-password' value='%s'></div></div>
+ <button name='id' class='submit-change' type='submit' value='%s'>Verkställ</button></form>
+</div> \n",$row[0],$row[1],$row[0]);
     }
 
    
@@ -92,7 +75,9 @@ if ($result=mysqli_query($db_conn,$sql))
 $db_conn->close();
 
 ?>
- 
+
+
+
 </main>
 
 <aside>

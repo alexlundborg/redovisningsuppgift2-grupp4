@@ -41,7 +41,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 </section>
 
 <main>
-     <div class="top-bar">
+    <div class="top-bar">
 <div class="left">
   <form action="show-student-table.php" method="post">
    <select id="select-tabell" name="tabell">
@@ -67,38 +67,32 @@ define('DB_USER', '4003497_vu37133');
 define('DB_PASSWORD','wwHe25Ng');
 define('DB_HOST','my06s.sqlserver.se');
 define('DB_NAME','4003497-db4');
-$select = $_POST["tabell"];
+$search = $_POST["searchQuery"];
 
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-if ($select == 'alla' || $select == 'Alla studenter'){
-  $sql = "SELECT * FROM Student ORDER BY efternamn ASC";
-  echo("<h3>" . $select ."</h3>");
-} else{
-  $sql = "SELECT * FROM Student where sektion = '$select' ORDER BY efternamn ASC";
-  echo("<h3>" . $select ."</h3>");
-
-}
+$sql = "SELECT * FROM Student WHERE CONCAT_WS(' ',fornamn,efternamn) 
+LIKE '%$search%'";
 
 
 if ($result=mysqli_query($db_conn,$sql))
   {
    
   // Fetch one and one row
-   while ($row=mysqli_fetch_row($result))
+ while ($row=mysqli_fetch_row($result))
     {
     printf ("<div class='row'> %s <b>%s</b> <br /> <p class='mail'>%s</p> <form action='radera-student.php' method='post'>      
  <button name='id' class='delete' type='submit' value='%s'>Radera</button></form><form action='redigera-student.php' method='post'>      
  <button name='id' class='change' type='submit' value='%s'>ändra</button></form><span class='current-sektion'> %s </span>
 </div> \n",$row[2],$row[3],$row[4],$row[0], $row[0], $row[1]);
     }
-
-
    
   // Free result set
   mysqli_free_result($result);
-}
+} else {
+    echo "Fel: " . $sql . "<br>" . $db_conn->error;
+} 
 
 
 $db_conn->close();

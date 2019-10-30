@@ -33,7 +33,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 <div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
 	
- <li> <a href="studenter.php">Studenter</a> </li>
+ <li> <a href="studenter.php">Ansökningar</a> </li>
 
 <li>  <a href="nytt-inlagg.php">Nytt inlägg</a> </li>
 
@@ -49,7 +49,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
   
  <input id="titel" name="titel" placeholder="Titel"><br />
   <textarea id="brodtext" name="brodtext"></textarea><br/>
-  <input class="submit" type="submit" value="Skapa inlägg">
+  <input class="submit" type="submit" value="Skapa händelse">
 </form>
 
 <?php

@@ -32,7 +32,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 <div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
 	
- <li> <a id="active" href="">Ansökningar</a> </li>
+ <li> <a id="active" href="studenter.php">Ansökningar</a> </li>
 
 <li>  <a href="nytt-inlagg.php">Nytt inlägg</a> </li>
 
@@ -55,8 +55,11 @@ if ( isset( $_SESSION['user_id'] ) ) {
 </form>
 </div>
 <div class="search">
-  <input id="search" placeholder="Sök...">
-</div>
+  <form action="search-student.php" method="post">
+  <input id="search" name="searchQuery" placeholder="Sök...">
+      <button type="submit" class="show">Sök</button>
+    </form>
+  </div>
 </div>
 
 <?php
@@ -79,9 +82,10 @@ if ($result=mysqli_query($db_conn,$sql))
   // Fetch one and one row
   while ($row=mysqli_fetch_row($result))
     {
-    printf ("<div class='row'> %s <b>%s</b>  <form action='radera-student.php' method='post'>      
- <button name='id' class='delete' type='submit' value='%s'>Radera</button></form><a href='' class='change'>ändra</a><span class='current-sektion'> %s </span>
-</div> \n",$row[2],$row[3],$row[0], $row[1]);
+    printf ("<div class='row'> %s <b>%s</b> <br /> <p class='mail'>%s</p> <form action='radera-student.php' method='post'>      
+ <button name='id' class='delete' type='submit' value='%s'>Radera</button></form><form action='redigera-student.php' method='post'>      
+ <button name='id' class='change' type='submit' value='%s'>ändra</button></form><span class='current-sektion'> %s </span>
+</div> \n",$row[2],$row[3],$row[4],$row[0], $row[0], $row[1]);
     }
 
    

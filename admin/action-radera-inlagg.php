@@ -33,7 +33,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 <div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
 	
- <li> <a href="studenter.php">Studenter</a> </li>
+ <li> <a href="studenter.php">Ansökningar</a> </li>
 
 <li>  <a id="active" href="">Nytt inlägg</a> </li>
 
