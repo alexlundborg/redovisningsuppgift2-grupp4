@@ -409,6 +409,24 @@ Slideshow
 }
 
 
+#slideshow3 { 
+	margin: auto; 
+	position: relative; 
+	height:25vw;
+	padding: 0px; 
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+}
+
+#slideshow3 img{
+	width: 100%; 
+
+}
+
+#slideshow3 > div { 
+	position: absolute; 
+
+}
+
 /*
 Countdown
 */
@@ -456,7 +474,9 @@ Images
 	margin-bottom:20px;
 }
 
-
+.img{
+	max-width:100%;
+}
 
 /*
 Overlay menu
@@ -595,6 +615,9 @@ textarea{
 	border:1px solid rgb(200,100,100);
 }
 
+.less-margin{
+	margin-top:10px;
+}
 /*
 table
 */

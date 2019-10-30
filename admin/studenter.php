@@ -41,6 +41,9 @@ if ( isset( $_SESSION['user_id'] ) ) {
 </section>
 
 <main>
+  <div class="info">
+    <p>Info</p>
+  </div>
     <div class="top-bar">
 <div class="left">
   <form action="show-student-table.php" method="post">

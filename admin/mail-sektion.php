@@ -31,7 +31,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 
 <div class="grid-container" id="content-paper">
 <section id="show-on-mobile">
-	
+  
  <li> <a id="active" href="studenter.php">Ansökningar</a> </li>
 
 <li>  <a href="nytt-inlagg.php">Nytt inlägg</a> </li>
@@ -41,7 +41,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 </section>
 
 <main>
-     <div class="top-bar">
+    <div class="top-bar">
 <div class="left">
   <form action="show-student-table.php" method="post">
    <select id="select-tabell" name="tabell">
@@ -67,20 +67,33 @@ define('DB_USER', '4003497_vu37133');
 define('DB_PASSWORD','wwHe25Ng');
 define('DB_HOST','my06s.sqlserver.se');
 define('DB_NAME','4003497-db4');
-$select = $_POST["tabell"];
+$sektion = $_POST["sektion"];
+$subject = $_POST["subject"];
+$msg = $_POST["msg"];
 
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-if ($select == 'alla' || $select == 'Alla studenter'){
-  $sql = "SELECT * FROM Student ORDER BY efternamn ASC";
-  echo("<h3>" . $select ."</h3>");
-} else{
-  $sql = "SELECT * FROM Student where sektion = '$select' ORDER BY efternamn ASC";
-  echo("<h3>" . $select ."</h3><form action='compose-mail.php' method='post'>      
- <button name='sektion' class='send-mail' type='submit' value='$select'>Skicka epost till samtliga nedan</button></form>");
+$sql = "SELECT email FROM Student where sektion = '$sektion' ORDER BY efternamn ASC";
+
+
+if ($result=mysqli_query($db_conn,$sql))
+  {
+   
+  // Fetch one and one row
+  while ($row = mysqli_fetch_object($result)) {
+    $mail = $row->email;
+    mail("$mail","$subject",$msg);
+    echo "<div class='success-notice'>E-post skickat till samtliga i $sektion.</div>";
+}
 
 }
+
+$sql = "SELECT * FROM Student where sektion = '$sektion' ORDER BY efternamn ASC";
+  
+  echo("<br /><h3>" . $sektion ."</h3><form action='compose-mail.php' method='post'>      
+ <button name='sektion' class='send-mail' type='submit' value='$sektion'>Skicka epost till samtliga nedan</button></form>");
+
 
 
 if ($result=mysqli_query($db_conn,$sql))
@@ -96,10 +109,7 @@ if ($result=mysqli_query($db_conn,$sql))
     }
 
 
-   
-  // Free result set
-  mysqli_free_result($result);
-}
+  }
 
 
 $db_conn->close();
@@ -111,7 +121,7 @@ $db_conn->close();
 </main>
 
 <aside>
-	
+  
 </aside>
 </div>
 

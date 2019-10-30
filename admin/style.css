@@ -291,6 +291,17 @@ padding:30px;
 	border:1px solid rgb(200,100,100);
 }
 
+.info{
+	font-family: Tahoma;
+	font-size: 13px;
+	margin-top:20px;
+	width:98%;
+	padding:10px;
+	border-radius: 5px;
+	background: rgb(256,256,100);
+	border:1px solid rgb(200,200,50);
+}
+
 #signedIn{
 	float:right;
 	font-family: Tahoma;
@@ -774,6 +785,25 @@ button.delete:hover{
 		background:rgb(210,100,100);
 
 }
+
+.send-mail{
+	font-size:13px;
+	background:#eee;
+	border:1px solid #ddd;
+	color:#000;
+	border-radius: 10px;
+	text-decoration: none;
+	padding:5px;
+	float:right;
+	margin-right:-10px;
+	margin-top:-30px;
+}
+
+.send-mail:hover{
+	background:#ddd;
+	border:1px solid #ccc;
+
+	}
 
 
 #change-fornamn, #change-efternamn, #change-email{

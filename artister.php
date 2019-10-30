@@ -35,7 +35,7 @@ Stora scen, lilla scen, Krog Upp å Ner, smånöjen, tält, spontana framträdan
     <div>
      <img src="/bilder/Karneval2010002.jpg">
    </div>
-
+</div>
 <iframe width="590" height="315" src="https://www.youtube.com/embed/jBb4eL9Nk-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="590" height="315" src="https://www.youtube.com/embed/EU7Ip3Mk-4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
