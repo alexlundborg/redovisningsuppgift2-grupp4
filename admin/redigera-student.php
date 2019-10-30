@@ -88,7 +88,7 @@ if ($result=mysqli_query($db_conn,$sql))
     <option name='Blädderiet'>Blädderiet</option>
     <option name='Dansen'>Dansen</option>
   </select>    </div></div>
- <button name='id' class='submit-change' type='submit' value='%s'>Verkställ</button></form>
+ <button name='id' class='submit-change' type='submit' value='%s'>Spara</button></form>
 </div> \n",$row[2],$row[3], $row[4], $row[1], $row[0]);
     }
 

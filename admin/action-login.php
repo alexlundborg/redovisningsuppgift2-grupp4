@@ -120,7 +120,7 @@ if(!CheckLoginInDB($username,$password))
   echo $_SESSION['user_id'];
 ?>!</h2>
 
-  <p>Välj ett alternativ i menyn till vänster.  <br /><br/>I <i>Ansökningar</i> kan du se alla ansökande studenter, se alla ansökningar för en särskild sektion, söka på en särskild student, se och ändra en students uppgifter samt ta bort ansökningar. <br /><br />I <i>Nytt inlägg</i> kan du skriva nya inlägg på startsidan och ta bort befintliga. <br /><br />I <i>Ny händelse</i> kan du skriva nya händelser på startsidan och ta bort befintliga. </p>
+  <p>Välj ett alternativ i menyn till vänster. <br /><br/>I <i>Ansökningar</i> kan du se alla ansökande studenter, se alla ansökningar för en särskild sektion, söka på en särskild student, se och ändra en students uppgifter, ta bort ansökningar samt skicka e-post till samtliga studenter som ansökt till samma sektion. <br /><br />I <i>Nytt inlägg</i> kan du skriva nya inlägg på startsidan och ta bort befintliga. <br /><br />I <i>Ny händelse</i> kan du skriva nya händelser på startsidan och ta bort befintliga. </p>
 
 
     </main>

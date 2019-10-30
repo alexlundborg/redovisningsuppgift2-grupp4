@@ -78,7 +78,7 @@ if ($select == 'alla' || $select == 'Alla studenter'){
 } else{
   $sql = "SELECT * FROM Student where sektion = '$select' ORDER BY efternamn ASC";
   echo("<h3>" . $select ."</h3><form action='compose-mail.php' method='post'>      
- <button name='sektion' class='send-mail' type='submit' value='$select'>Skicka epost till samtliga nedan</button></form>");
+ <button name='sektion' class='send-mail' type='submit' value='$select'>Skicka e-post till samtliga nedan</button></form>");
 
 }
 

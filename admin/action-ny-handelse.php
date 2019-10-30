@@ -46,8 +46,8 @@ if ( isset( $_SESSION['user_id'] ) ) {
 <h2>Skapa en händelse</h2>
 <form action="action-ny-handelse.php" method="post">
   
- <input id="titel" name="titel" placeholder="Titel"><br />
-  <textarea id="brodtext" name="brodtext"></textarea><br/>
+ <input id="titel" name="titel" placeholder="Titel" required><br />
+  <textarea id="brodtext" name="brodtext" required></textarea><br/>
   <input class="submit" type="submit" value="Skapa händelse">
 </form>
 
@@ -77,7 +77,7 @@ if ($db_conn->query($sql) === TRUE) {
 
 
 
-if (!empty($TITEL)) {
+if (!empty($TITEL) && !empty($BRODTEXT)) {
   $sql = "INSERT INTO Event (titel, brodtext)
   VALUES ('$TITEL', '$BRODTEXT')";
 

@@ -42,7 +42,7 @@ if ( isset( $_SESSION['user_id'] ) ) {
 
 <main>
   <div class="info">
-    <p>Info</p>
+    <p>För att se samtliga ansökningar för en sektion, välj ett alternativ i rullgardinsmenyn <i>(Alla studenter)</i> och tryck "visa". För att skicka e-post till alla studenter i den valda sektionen, tryck på "Skicka epost till samtliga nedan", och skriv ett meddelande.</p>
   </div>
     <div class="top-bar">
 <div class="left">

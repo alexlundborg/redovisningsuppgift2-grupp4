@@ -294,12 +294,12 @@ padding:30px;
 .info{
 	font-family: Tahoma;
 	font-size: 13px;
-	margin-top:20px;
+	margin-bottom:10px;
 	width:98%;
 	padding:10px;
 	border-radius: 5px;
-	background: rgb(256,256,100);
-	border:1px solid rgb(200,200,50);
+	background: rgb(250,240,230);
+	border:1px solid rgb(220,200,100);
 }
 
 #signedIn{
@@ -788,8 +788,8 @@ button.delete:hover{
 
 .send-mail{
 	font-size:13px;
-	background:#eee;
-	border:1px solid #ddd;
+	background: rgb(250,240,230);
+	border:1px solid rgb(220,200,100);
 	color:#000;
 	border-radius: 10px;
 	text-decoration: none;
@@ -800,8 +800,8 @@ button.delete:hover{
 }
 
 .send-mail:hover{
-	background:#ddd;
-	border:1px solid #ccc;
+	background: rgb(240,230,220);
+	border:1px solid rgb(210,190,90);
 
 	}
 

@@ -51,9 +51,9 @@ $sektion = $_POST["sektion"];
 echo "<h2>Skriv ett e-post</h2>
 <form action='mail-sektion.php' method='post'>
   
- <input id='titel' name='subject' placeholder='Ämne'><br />
-  <textarea id='brodtext' name='msg'></textarea><br/>
-  <button name='sektion' class='submit' type='submit' value='$sektion'>Skicka mail</button>
+ <input id='titel' name='subject' placeholder='Ämne' required><br />
+  <textarea id='brodtext' name='msg' required></textarea><br/>
+  <button name='sektion' class='submit' type='submit' value='$sektion'>Skicka e-post</button>
 </form>"
 ?>
 

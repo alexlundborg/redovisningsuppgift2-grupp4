@@ -47,9 +47,9 @@ Antal biljetter
 </select>
 
 <br />
-  Förnamn: <br /><input class="text-input" type="text" name="fornamn"><br /><br />
-  Efternamn: <br /><input class="text-input" type="text" name="efternamn"><br /><br />
-  E-mail: <br /><input class="text-input" type="text" name="mail">
+  Förnamn: <br /><input class="text-input" type="text" name="fornamn" required><br /><br />
+  Efternamn: <br /><input class="text-input" type="text" name="efternamn" required><br /><br />
+  E-mail: <br /><input class="text-input" type="text" name="mail" required>
 
 
   <input class="submit" type="submit">
