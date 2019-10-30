@@ -70,6 +70,7 @@ define('DB_NAME','4003497-db4');
 $sektion = $_POST["sektion"];
 $subject = $_POST["subject"];
 $msg = $_POST["msg"];
+$bool = false;
 
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
@@ -84,9 +85,13 @@ if ($result=mysqli_query($db_conn,$sql))
   while ($row = mysqli_fetch_object($result)) {
     $mail = $row->email;
     mail("$mail","$subject",$msg);
-    echo "<div class='success-notice'>E-post skickat till samtliga i $sektion.</div>";
+    $bool = true;
 }
-
+    if ($bool) {
+        echo "<div class='success-notice'>E-post skickat till samtliga i $sektion.</div>";
+      } else {
+        echo "<div class='error-notice'>Sektionen har inga ansökningar.</div>";
+      }
 }
 
 $sql = "SELECT * FROM Student where sektion = '$sektion' ORDER BY efternamn ASC";
